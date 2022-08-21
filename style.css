@@ -1,0 +1,82 @@
+#item0 {grid-area: item0;}
+#item1 {grid-area: item1;}
+#item2 {grid-area: item2;}
+#item3 {grid-area: item3;}
+#item4 {grid-area: item4;}
+#item5 {grid-area: item5;}
+#item6 {grid-area: item6;}
+#item7 {grid-area: item7;}
+#item8 {grid-area: item8;}
+#item9 {grid-area: item9;}
+#plus {grid-area: plus;}
+#minus {grid-area: minus;}
+#mul {grid-area: mul;}
+#divi {grid-area: divi;}
+#equal {grid-area: equal;}
+#dot {grid-area: disdot;}
+
+#clear {
+    grid-area: clear;
+    background-color: lightpink;
+}
+#delete {
+    grid-area: delete;
+    background-color: lightblue;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgray;
+    border: solid;
+    border-radius: 16px;
+    height: 600px;
+    width: 450px;
+}
+
+#screen {
+    background-color: white;
+    border-radius: 8px;
+    border: solid;
+    margin: 25px;
+    width: 400px;
+    height: 150px;
+}
+
+#body {
+    margin: 0 25px 25px 25px;
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-areas: 
+        'clear clear delete delete'
+        'item7 item8 item9 divi'
+        'item4 item5 item6 mul'
+        'item1 item2 item3 minus'
+        'disdot item0 equal plus';
+    grid-gap: 15px;
+}
+
+.buttons {
+    background-color: white;
+    border: solid;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
